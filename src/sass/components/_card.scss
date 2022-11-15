@@ -1,0 +1,83 @@
+.film-card {
+  cursor: pointer;
+  
+
+  &__link {
+    display: block;
+
+    }
+
+  &__box {
+    
+    height: 100%;
+
+    @include tab-only {
+      width: 336px;
+      height: 455px;
+    }
+
+    @include pc-only {
+      width: 394px;
+      height: 574px;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+  }
+
+  &__info {
+    font-size: 12px;
+    line-height: 1.3;
+    margin-top: 10px;
+   
+    @include tab-only {
+      margin-top: 8px;
+    }
+
+    @include pc-only {
+      font-size: 20px;
+      line-height: 1.2;
+      margin-top: 12px;
+      
+    }
+  }
+
+  &__title {
+    color: $mainTextColor;
+    text-transform: uppercase;
+  }
+
+  &__year {
+    color: $accentColor;
+    border-left: 2px solid $accentColor;
+    padding-left: 4px;
+  }
+
+  &__genre {
+    color: $accentColor;
+  }
+
+  &__rating {
+    display: inline-block;
+    border-radius: 5px;
+    width: 36px;
+    height: 16px;
+    background-color: $accentColor;
+    text-align: center;
+    text-transform: uppercase;
+    color: $secondaryTextColor;
+    font-size: 12px;
+    line-height: 1, 7;
+    margin-left: 8px;
+    padding-top: 2px;
+
+    @include pc-only {
+      width: 40px;
+      height: 20px;
+      padding-top: 3px;
+    }
+  }
+}

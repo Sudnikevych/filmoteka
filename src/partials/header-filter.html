@@ -1,0 +1,212 @@
+<!-- filters -->
+
+<form class="header__form" id="header__form">
+  <div class="header__form-genres">
+    <label for="genre" class="header__form-text">Сhoose a genre:</label>
+    <select name="genre" id="genre" class="header__form-choice">
+      <option value="28" class="header__form-genres-name" data-filter="28">
+        Action
+      </option>
+      <option value="12" class="header__form-genres-name" data-filter="12">
+        Adventure
+      </option>
+      <option value="16" class="header__form-genres-name" data-filter="16">
+        Animation
+      </option>
+      <option value="35" class="header__form-genres-name" data-filter="35">
+        Comedy
+      </option>
+      <option value="80" class="header__form-genres-name" data-filter="35">
+        Crime
+      </option>
+      <option value="99" class="header__form-genres-name" data-filter="99">
+        Documentary
+      </option>
+      <option value="18" class="header__form-genres-name" data-filter="18">
+        Drama
+      </option>
+      <option value="10751" class="header__form-genres-name" data-filter="18">
+        Family
+      </option>
+      <option value="14" class="header__form-genres-name" data-filter="18">
+        Fantasy
+      </option>
+      <option value="36" class="header__form-genres-name" data-filter="18">
+        History
+      </option>
+      <option value="36" class="header__form-genres-name" data-filter="18">
+        History
+      </option>
+      <option value="27" class="header__form-genres-name" data-filter="18">
+        Horror
+      </option>
+      <option value="10402" class="header__form-genres-name" data-filter="18">
+        Music
+      </option>
+      <option value="9648" class="header__form-genres-name" data-filter="18">
+        Mystery
+      </option>
+      <option value="10749" class="header__form-genres-name" data-filter="18">
+        Romance
+      </option>
+      <option value="878" class="header__form-genres-name" data-filter="18">
+        Science Fiction
+      </option>
+      <option value="10770" class="header__form-genres-name" data-filter="18">
+        TV Movie
+      </option>
+      <option value="53" class="header__form-genres-name" data-filter="53">
+        Thriller
+      </option>
+      <option value="10752" class="header__form-genres-name" data-filter="53">
+        War
+      </option>
+      <option value="37" class="header__form-genres-name" data-filter="53">
+        Western
+      </option>
+    </select>
+  </div>
+
+  <div class="header__form-sorts">
+    <label for="sort" class="header__form-text">Sort by:</label>
+    <select name="sort" id="sort" class="header__form-choice">
+      <option
+        value="vote_average.desc"
+        class="header__form-sort-by"
+        data-filter="ratingDown"
+      >
+        RatingDown
+      </option>
+      <option
+        value="vote_average.asc"
+        class="header__form-sort-by"
+        data-filter="ratingUp"
+      >
+        RatingUp
+      </option>
+      <option
+        value="release_date.desc"
+        class="header__form-sort-by"
+        data-filter="firstNew"
+      >
+        First new
+      </option>
+      <option
+        value="release_date.asc"
+        class="header__form-sort-by"
+        data-filter="firstOld"
+      >
+        First old
+      </option>
+      <option
+        value="revenue.asc"
+        class="header__form-sort-by"
+        data-filter="RevenueUp"
+      >
+        RevenueUp
+      </option>
+      <option
+        value="revenue.desc"
+        class="header__form-sort-by"
+        data-filter="RevenueDown"
+      >
+        RevenueDown
+      </option>
+    </select>
+  </div>
+
+  <div class="header__form-release">
+    <label for="yearStart" class="header__form-text">Select year: from</label>
+    <select
+      id="yearStart"
+      name="yearStart"
+      class="header__form-choice"
+      data-filter="yearStart"
+    >
+      <option value="1950">1950</option>
+      <option value="1955">1955</option>
+      <option value="1960">1960</option>
+      <option value="1965">1965</option>
+      <option value="1970">1970</option>
+      <option value="1975">1975</option>
+      <option value="1980">1980</option>
+      <option value="1985">1985</option>
+      <option value="1990">1990</option>
+      <option value="1995">1995</option>
+      <option value="1996">1996</option>
+      <option value="1997">1997</option>
+      <option value="1998">1998</option>
+      <option value="1999">1999</option>
+      <option value="2000">2000</option>
+      <option value="2001">2001</option>
+      <option value="2002">2002</option>
+      <option value="2003">2003</option>
+      <option value="2004">2004</option>
+      <option value="2005">2005</option>
+      <option value="2006">2006</option>
+      <option value="2007">2007</option>
+      <option value="2008">2008</option>
+      <option value="2009">2009</option>
+      <option value="2010">2010</option>
+      <option value="2011">2011</option>
+      <option value="2012">2012</option>
+      <option value="2013">2013</option>
+      <option value="2014">2014</option>
+      <option value="2015">2015</option>
+      <option value="2016">2016</option>
+      <option value="2017">2017</option>
+      <option value="2018">2018</option>
+      <option value="2019">2019</option>
+      <option value="2020">2020</option>
+      <option value="2021">2021</option>
+      <option value="2022">2022</option>
+    </select>
+    <label for="yearEnd" class="header__form-text">to</label>
+    <select
+      id="yearEnd"
+      name="yearEnd"
+      class="header__form-choice"
+      data-filter="yearEnd"
+    >
+      <option value="2022">2022</option>
+      <option value="2021">2021</option>
+      <option value="2020">2020</option>
+      <option value="2019">2019</option>
+      <option value="2018">2018</option>
+      <option value="2017">2017</option>
+      <option value="2016">2016</option>
+      <option value="2015">2015</option>
+      <option value="2014">2014</option>
+      <option value="2013">2013</option>
+      <option value="2012">2012</option>
+      <option value="2011">2011</option>
+      <option value="2010">2010</option>
+      <option value="2009">2009</option>
+      <option value="2008">2008</option>
+      <option value="2007">2007</option>
+      <option value="2006">2006</option>
+      <option value="2005">2005</option>
+      <option value="2004">2004</option>
+      <option value="2003">2003</option>
+      <option value="2002">2002</option>
+      <option value="2001">2001</option>
+      <option value="2000">2000</option>
+      <option value="1999">1999</option>
+      <option value="1998">1998</option>
+      <option value="1997">1997</option>
+      <option value="1996">1996</option>
+      <option value="1995">1995</option>
+      <option value="1990">1990</option>
+      <option value="1985">1985</option>
+      <option value="1980">1980</option>
+      <option value="1975">1975</option>
+      <option value="1970">1970</option>
+      <option value="1965">1965</option>
+      <option value="1960">1960</option>
+      <option value="1955">1955</option>
+      <option value="1950">1950</option>
+    </select>
+  </div>
+
+  <button type="submit" class="btn header__form-btn">Search</button>
+</form>
